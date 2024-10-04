@@ -18,7 +18,7 @@
     "build": "tsc",
     "preproduction": "npm run build",
     "production": "node ./dist/index.js",
-    "development": "nodemon --verbose ./src/index.ts",
+    "development": "nodemon ./src/index.ts",
     "staging": "npm run node:ts ./src/index.ts",
     "test": "npm run node:ts ./test/tests.ts",
     "node:ts": "node --import ./loaders/ts-loader.mjs"
