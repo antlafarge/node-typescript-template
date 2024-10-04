@@ -17,11 +17,11 @@
     "prebuild": "npm run clean",
     "build": "tsc",
     "preproduction": "npm run build",
-    "production": "node dist/index.js",
-    "development": "nodemon --verbose src/index.ts",
-    "staging": "npm run node-ts src/index.ts",
-    "test": "npm run node-ts test/tests.ts",
-    "node-ts": "node --import loaders/ts-loader.mjs"
+    "production": "node ./dist/index.js",
+    "development": "nodemon --verbose ./src/index.ts",
+    "staging": "npm run node-ts ./src/index.ts",
+    "test": "npm run node-ts ./test/tests.ts",
+    "node-ts": "node --import ./loaders/ts-loader.mjs"
   },
   "main": "dist/index.js",
   "type": "module",
