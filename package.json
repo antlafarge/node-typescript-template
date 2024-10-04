@@ -1,0 +1,42 @@
+{
+  "name": "app",
+  "description": "App description",
+  "homepage": "https://github.com/user/repo",
+  "author": "first name last name (email)",
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/user/repo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/user/repo/issues"
+  },
+  "scripts": {
+    "start": "npm run production",
+    "clean": "rm -R dist",
+    "prebuild": "npm run clean",
+    "build": "tsc",
+    "preproduction": "npm run build",
+    "production": "node dist/index.js",
+    "development": "nodemon --verbose src/index.ts",
+    "staging": "npm run node-ts src/index.ts",
+    "test": "npm run node-ts test/tests.ts",
+    "node-ts": "node --import loaders/ts-loader.mjs"
+  },
+  "main": "dist/index.js",
+  "type": "module",
+  "version": "0.1.0",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.11.1",
+    "@types/node": "^22.7.4",
+    "eslint": "^9.11.1",
+    "globals": "^15.10.0",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2",
+    "typescript-eslint": "^8.8.0"
+  },
+  "dependencies": {
+  }
+}
