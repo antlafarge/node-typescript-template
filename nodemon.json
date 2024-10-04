@@ -1,9 +1,9 @@
 {
     "ext": "ts",
-    "exec": "npm run node-ts",
+    "exec": "npm run node:ts",
     "execMap": {
         "js": "node",
-        "ts": "npm run node-ts"
+        "ts": "npm run node:ts"
     },
     "ignore": [
         "**/*.test.ts",
