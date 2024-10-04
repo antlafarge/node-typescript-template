@@ -10,7 +10,7 @@
 `npm run build`
 
 # Start
-`npm run production`
-`npm run test`
-`npm run staging`
+`npm run production`  
+`npm run test`  
+`npm run staging`  
 `npm run development`
