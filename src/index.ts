@@ -5,7 +5,7 @@ import MyModule from './myModule.js';
 const app = express()
 
 app.get('/', function (req, res) {
-  res.send('Hello World')
+    res.send('Hello World')
 })
 
 console.log(`http://localhost:${MyModule.myNumber}`);
