@@ -1,13 +1,13 @@
 import express from 'express';
-
+import data from './data.json' with { type: "json" };
 import MyModule from './myModule.js';
 
 const app = express()
 
 app.get('/', function (req, res) {
-    res.send('Hello World')
-})
+    res.send(MyModule.helloWorld)
+});
 
-console.log(`http://localhost:${MyModule.myNumber}`);
+console.log(`http://localhost:${data.port}`);
 
-app.listen(MyModule.myNumber)
+app.listen(data.port)
