@@ -25,6 +25,7 @@
         "outDir": "dist",
         "sourceRoot": "src",
         "isolatedModules": true,
+        "allowSyntheticDefaultImports": true,
         "esModuleInterop": true,
         "forceConsistentCasingInFileNames": true,
         "strict": true,

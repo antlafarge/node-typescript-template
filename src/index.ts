@@ -1,6 +1,6 @@
 import express from 'express';
 import data from './data.json' with { type: "json" };
-import MyModule from './myModule.js';
+import MyModule from './myModule';
 
 const app = express()
 
