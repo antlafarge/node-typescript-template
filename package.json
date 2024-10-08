@@ -14,12 +14,13 @@
     "scripts": {
         "start": "npm run production",
         "clean": "npx rimraf dist",
+        "build": "tsc",
         "prerebuild": "npm run clean",
         "rebuild": "npm run build",
-        "build": "tsc",
-        "preproduction": "npm run build",
-        "production": "node ./dist/index.js",
+        "predevelopment": "tsc --noEmit",
         "development": "nodemon ./src/index.ts",
+        "preproduction": "npm run rebuild",
+        "production": "node ./dist/index.js",
         "staging": "npm run node:ts ./src/index.ts",
         "test": "npm run node:ts ./test/tests.ts",
         "node:ts": "node --import ./loaders/ts-loader.mjs"
