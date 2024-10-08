@@ -12,11 +12,14 @@
             ],
             "env": {
                 "NODE_ENV": "development",
+                "DEBUG": "*"
             },
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "sourceMaps": true
+            "sourceMaps": true,
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen"
         },
         {
             "name": "Run tests",
@@ -33,7 +36,9 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "sourceMaps": true
+            "sourceMaps": true,
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen"
         },
         {
             "name": "Run Staging",
@@ -50,7 +55,9 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "sourceMaps": true
+            "sourceMaps": true,
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen"
         },
         {
             "name": "Run Production",
@@ -68,6 +75,8 @@
                 "<node_internals>/**"
             ],
             "sourceMaps": true,
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
             "outFiles": [
                 "${workspaceFolder}/dist/**/*.js"
             ]
