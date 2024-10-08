@@ -24,6 +24,7 @@
         "inlineSourceMap": true,
         "outDir": "dist",
         "sourceRoot": "src",
+        "noEmitOnError": true,
         "isolatedModules": true,
         "allowSyntheticDefaultImports": true,
         "esModuleInterop": true,
