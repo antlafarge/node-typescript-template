@@ -14,7 +14,8 @@
     "scripts": {
         "start": "npm run production",
         "clean": "npx rimraf dist",
-        "prebuild": "npm run clean",
+        "prerebuild": "npm run clean",
+        "rebuild": "npm run build",
         "build": "tsc",
         "preproduction": "npm run build",
         "production": "node ./dist/index.js",

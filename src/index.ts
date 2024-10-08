@@ -4,7 +4,7 @@ import MyModule from './myModule.js';
 
 const app = express()
 
-app.get('/', function (req, res) {
+app.get('/', (req, res) => {
     res.send(MyModule.helloWorld)
 });
 
