@@ -1,36 +1,30 @@
 {
-    "include": [
-        "src/**/*"
-    ],
-    "exclude": [
-        "node_modules",
-        ".vscode"
-    ],
-    "compilerOptions": {
-        "target": "ES2023",
-        "lib": [
-            "ES2023"
-        ],
-        "module": "ESNext",
-        "rootDir": "src",
-        "moduleResolution": "Node10",
-        "baseUrl": "./",
-        "paths": {
-            "*": [
-                "node_modules/*"
-            ]
-        },
-        "resolveJsonModule": true,
-        "inlineSourceMap": true,
-        "outDir": "dist",
-        "sourceRoot": "src",
-        "noEmitOnError": true,
-        "isolatedModules": true,
-        "allowSyntheticDefaultImports": true,
-        "esModuleInterop": true,
-        "forceConsistentCasingInFileNames": true,
-        "strict": true,
-        "noImplicitAny": true,
-        "skipLibCheck": true
-    }
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", ".vscode"],
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["ESNext", "DOM", "WebWorker"],
+    "module": "NodeNext",
+    "rootDir": "src",
+    "moduleResolution": "nodenext",
+    "baseUrl": "./",
+    "paths": {
+      "*": ["node_modules/*"]
+    },
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+    "alwaysStrict": true,
+    "checkJs": false,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "inlineSourceMap": true,
+    "isolatedModules": true,
+    "noEmitOnError": true,
+    "noImplicitAny": true,
+    "resolveJsonModule": true,
+    "outDir": "dist",
+    "skipLibCheck": true,
+    "sourceRoot": "src",
+    "strict": true
+  }
 }
