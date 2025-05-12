@@ -1,10 +1,14 @@
 APP
 ===
 
+# Init project
+`npm init -y`
+`npm install express`
+`npm install --save-dev @eslint/js @types/express @types/node eslint globals nodemon ts-node typescript typescript-eslint`
+
 # Setup
 
 ## First time
-`npm install -g npm`
 `npm install`
 
 ## Build
