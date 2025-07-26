@@ -1,10 +1,10 @@
 {
   "include": [
-    "src/**/*"
+    "src/**/*",
   ],
   "exclude": [
     "node_modules",
-    ".vscode"
+    ".vscode",
   ],
   "compilerOptions": {
     "target": "esnext",
@@ -13,11 +13,11 @@
     "lib": [
       "ESNext",
       "DOM",
-      "DOM.Iterable",
-      "DOM.AsyncIterable",
-      "WebWorker"
+      "WebWorker",
     ],
     "rootDir": "src",
+    "sourceRoot": "src",
+    "outDir": "dist",
     "baseUrl": "./",
     "paths": {
       "*": [
@@ -35,9 +35,7 @@
     "noEmitOnError": true,
     "noImplicitAny": true,
     "resolveJsonModule": true,
-    "outDir": "dist",
     "skipLibCheck": true,
-    "sourceRoot": "src",
     "strict": true
   }
 }
