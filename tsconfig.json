@@ -1,15 +1,28 @@
 {
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", ".vscode"],
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    ".vscode"
+  ],
   "compilerOptions": {
-    "target": "ESNext",
-    "lib": ["ESNext", "DOM", "WebWorker"],
-    "module": "NodeNext",
-    "rootDir": "src",
+    "target": "esnext",
+    "module": "nodenext",
     "moduleResolution": "nodenext",
+    "lib": [
+      "ESNext",
+      "DOM",
+      "DOM.Iterable",
+      "DOM.AsyncIterable",
+      "WebWorker"
+    ],
+    "rootDir": "src",
     "baseUrl": "./",
     "paths": {
-      "*": ["node_modules/*"]
+      "*": [
+        "node_modules/*"
+      ]
     },
     "allowJs": false,
     "allowSyntheticDefaultImports": true,
