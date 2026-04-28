@@ -1,17 +1,10 @@
 {
-    "ext": "ts,json",
-    "exec": "tsx",
-    "execMap": {
-        "js": "node",
-        "ts": "tsx"
-    },
-    "ignore": [
-        "**/*.test.ts",
-        "**/*.spec.ts",
-        ".git",
-        "node_modules"
-    ],
-    "watch": [
-        "src"
-    ]
+  "ext": "ts,json",
+  "exec": "tsx",
+  "execMap": {
+    "js": "node",
+    "ts": "tsx"
+  },
+  "ignore": ["**/*.test.ts", "**/*.spec.ts", ".git", "node_modules"],
+  "watch": ["src"]
 }

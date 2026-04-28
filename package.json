@@ -1,41 +1,44 @@
 {
-    "name": "app",
-    "description": "App description",
-    "homepage": "https://github.com/user/repo",
-    "author": "first name last name (email)",
-    "publicUrl": "http://example.com",
-    "keywords": [],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/user/repo.git"
-    },
-    "bugs": {
-        "url": "https://github.com/user/repo/issues"
-    },
-    "scripts": {
-        "start": "npm run production",
-        "clean": "npx rimraf dist",
-        "build": "tsc",
-        "prerebuild": "npm run clean",
-        "rebuild": "npm run build",
-        "development": "nodemon ./src/index.ts",
-        "preproduction": "npm run rebuild",
-        "production": "node ./dist/index.js",
-        "staging": "tsx ./src/index.ts",
-        "test": "tsx ./test/tests.ts"
-    },
-    "main": "./dist/index.js",
-    "type": "module",
-    "version": "0.1.0",
-    "license": "ISC",
-    "devDependencies": {
-        "@eslint/js": "^9.34.0",
-        "@types/node": "^24.3.0",
-        "eslint": "^9.34.0",
-        "globals": "^16.3.0",
-        "nodemon": "^3.1.10",
-        "tsx": "^4.20.5",
-        "typescript": "^5.9.2",
-        "typescript-eslint": "^8.42.0"
-    }
+  "name": "app",
+  "description": "App description",
+  "homepage": "https://github.com/user/repo",
+  "author": "first name last name (email)",
+  "publicUrl": "http://example.com",
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/user/repo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/user/repo/issues"
+  },
+  "scripts": {
+    "start": "npm run production",
+    "clean": "npx rimraf dist",
+    "build": "tsc",
+    "prerebuild": "npm run clean",
+    "rebuild": "npm run build",
+    "development": "nodemon ./src/index.ts",
+    "preproduction": "npm run build",
+    "production": "node ./dist/index.js",
+    "staging": "tsx ./src/index.ts",
+    "test": "tsx ./test/tests.ts",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "format": "prettier --write ./src"
+  },
+  "main": "./dist/index.js",
+  "type": "module",
+  "version": "0.1.0",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^25.6.0",
+    "eslint": "^10.2.1",
+    "nodemon": "^3.1.14",
+    "prettier": "^3.8.3",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.59.1"
+  }
 }

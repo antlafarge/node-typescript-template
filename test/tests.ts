@@ -1,1 +1,1 @@
-console.log("No tests");
+console.log('No tests');
