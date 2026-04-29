@@ -5,6 +5,7 @@
     "target": "esnext",
     "module": "esnext",
     "moduleResolution": "bundler",
+    "types": ["node"],
     "lib": ["ESNext", "DOM", "WebWorker"],
     "rootDir": "src",
     "sourceRoot": "src",
